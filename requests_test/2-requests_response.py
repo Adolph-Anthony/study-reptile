@@ -5,7 +5,10 @@ url = 'https://www.baidu.com'
 
 # 向目标url发送get请求
 response = requests.get(url)
-print(response.text)
+
+# response.encoding = 'utf8'
+# print(response.text)
+# 存储bytes类型的响应源码,可以decode
 print(response.content.decode())
 '''
 response.text是requests模块按照chardet模块推测出的编码字符集进行解码的结果
