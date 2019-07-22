@@ -20,9 +20,12 @@ cookies = {cookie.split('=')[0]:cookie.split('=')[-1] for cookie in cookie_list}
 # for cookie in cookie_list:
 #     cookies[cookie.split('=')[0]]=cookie.split('=')[-1]
 #
-# print(cookies)
+print(cookies)
 
 response = requests.get(url,headers = headers)
+# resp = requests.get(url, headers=headers, cookies=cookies)
+
+# print(resp.text)
 with open('github3.html','wb') as f:
     # 发送带请求头的请求
 
