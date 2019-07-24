@@ -60,7 +60,11 @@ class Tieba(object):
 
             # 解析列表页面响应
             data_list, next_url = self.parse_list_page(list_page_data)
-            print(data_list)
+            # print(data_list)
+
+            if len(data_list)>40:
+                print(data_list)
+                break
             # 遍历帖子列表，获取每一个详细url
             # for data in data_list:
             #     # 发起请求，获取到详情页面的响应
