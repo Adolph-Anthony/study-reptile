@@ -10,10 +10,10 @@ driver.get('https://login.zhipin.com/?ka=header-login')
 
 time.sleep(3)
 # 账号
-driver.find_element_by_xpath('//*[@id="wrap"]/div[2]/div[1]/div[2]/div/form/div[3]/span[2]/input').send_keys('18367386087')
+driver.find_element_by_xpath('//*[@id="wrap"]/div[2]/div[1]/div[2]/div/form/div[3]/span[2]/input').send_keys('')
 time.sleep(2)
 # 密码
-driver.find_element_by_xpath('//*[@id="wrap"]/div[2]/div[1]/div[2]/div/form/div[4]/span/input').send_keys('xujing518333')
+driver.find_element_by_xpath('//*[@id="wrap"]/div[2]/div[1]/div[2]/div/form/div[4]/span/input').send_keys('')
 
 # 鼠标滑块
 # HK = driver.find_element_by_id('nc_2_n1z')
